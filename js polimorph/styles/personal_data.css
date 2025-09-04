@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 375px;
     min-width: 375px;
     height: 812px;
@@ -8,50 +8,56 @@
     padding-right: 16px;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    background-color: grey;
-    margin: 0;
-}
 
-.top{
+
+.top {
     height: 44px;
 }
 
-.s_top{
+.s_top {
     display: flex;
     justify-content: center;
 }
 
-.photo{
+.photo {
     display: flex;
     justify-content: center;
 }
 
-.text_field{
-    
+.change_p_p {
+margin-left: 87px;
+    font-size: 17px;
+    color: #1877F2;
+    width: 170px;
+}
+
+input{
+    height: 38px;
 }
 
 .defav {
-    margin-left: 50;
-    margin-right: 50;
+    margin-left: auto;
+    margin-right: auto;
     height: 80px;
     width: 80px;
 }
 
-ul{
+ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
 }
 
-
-button{
+button {
     border: none;
     background-color: white;
+    font-size: 15px;
+    height: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.footer{
-
+a{
+    color: #1877F2;
+    font-size: 18px;
 }
