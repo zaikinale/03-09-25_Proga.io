@@ -8,7 +8,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding: 5px calc((375px - 363px) / 2);
+    padding: 13px calc((375px - 363px) / 2);
     height: 60px;
 }
 
@@ -123,4 +123,7 @@ footer {
     justify-content: space-around;
     width: 100%;
     max-width: 375px;
+}
+.footer img{
+cursor: pointer;
 }
