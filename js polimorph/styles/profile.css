@@ -1,0 +1,112 @@
+
+body>* {
+    font-family: Roboto;
+    border: none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.login_back_section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.login_back_section > .back_button {
+    max-width: 10px;
+    max-height: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main > .person {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+main > .person > img {
+    border-radius: 50%;
+    max-width: 89px;
+    max-height: 89px;
+
+}
+
+main > .person > .additional_information_profile {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+main > .description >* {
+    font-size: 14px;
+} 
+
+main > .profile_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.follow_button {
+    background-color: #1877F2;
+    color: white;
+    border-radius: 5px;
+    width: 145px;
+    height: 25px;
+}
+.message_button {
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    width: 145px;
+    height: 25px;
+}
+.added_person_button {
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.history_block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.history_block > img {
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #7E7E7E;
+}
+
+.switching {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
