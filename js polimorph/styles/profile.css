@@ -110,3 +110,26 @@ main > .profile_buttons {
     justify-content: space-around;
     padding: 10px 0;
 }
+
+.content {
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: scroll;
+    height: 342px;
+}
+.post {
+    max-width: 124px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px;
+}
+
+
