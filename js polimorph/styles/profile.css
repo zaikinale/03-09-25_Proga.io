@@ -50,6 +50,9 @@ main > .person > .additional_information_profile {
 main > .description >* {
     font-size: 14px;
 } 
+main > .description > .links > a{
+    color: #1877F2;
+}
 
 main > .profile_buttons {
     display: flex;
