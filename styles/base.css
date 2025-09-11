@@ -172,7 +172,10 @@ header {
 }
 
 .post_block > .view_comments {
-    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
     font-size: 14px;
     color: #8A8A8A;
     padding-bottom: 7px;
