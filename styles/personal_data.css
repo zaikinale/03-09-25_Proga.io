@@ -1,0 +1,78 @@
+@import url('../styles/reset.css');
+@import url('../styles/base.css');
+
+header {
+    margin-bottom: 40px;
+}
+
+.image_user {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image_user > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.image_user > button {
+    font-size: 17px;
+    color: #1877F2;
+}
+
+.change_data_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.change_data_container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.change_data_container > form >* {
+    border-bottom: 1px solid #B3B3B3;
+    padding: 20px 0;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.category_change {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.category_change > button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.category_change > button > img {
+    width: 12px;
+    height: 7px;
+    transform: rotate(-90deg);
+}
+
+.bottom {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 34px;
+}
+
+.bottom > button {
+    color: #1877F2;
+    font-size: 15px;
+}
