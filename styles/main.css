@@ -1,0 +1,43 @@
+@import url('../styles/reset.css');
+@import url('../styles/base.css');
+
+header > .logo {
+    width: 124px;
+    height: 35px;
+}
+
+header > .actions_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.history_container {
+    border-bottom: 1px solid #8A8A8A;
+}
+
+.history_container > .create_stories {
+    min-width: 64px;
+}
+
+.history_container > .view_stories {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+}
+
+.stories_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 573px;
+    overflow: scroll;
+}
