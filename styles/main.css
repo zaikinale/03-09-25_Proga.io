@@ -34,6 +34,11 @@ header > .actions_buttons {
     align-items: center;
 }
 
+.stories_block > p {
+    width: 64px;
+    text-align: center;
+}
+
 main {
     display: flex;
     flex-direction: column;

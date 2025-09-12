@@ -35,6 +35,9 @@ main > .person > .additional_information_profile {
     flex-direction: row;
     gap: 30px;
 }
+main > .description {
+    padding: 0 11px;
+}
 
 main > .description >* {
     font-size: 14px;
@@ -48,6 +51,7 @@ main > .profile_buttons {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 11px;
     padding-bottom: 15px;
 }
 
@@ -90,6 +94,10 @@ main > .profile_buttons {
     align-items: center;
 }
 
+.history_block > p {
+    width: 64px;
+    text-align: center;
+}
 
 .switching {
     display: flex;
@@ -106,7 +114,7 @@ main > .profile_buttons {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: scroll;
-    height: 342px;
+    height: 320px;
 }
 .post {
     max-width: 124px;
