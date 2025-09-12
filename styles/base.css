@@ -217,6 +217,25 @@ header {
     padding-bottom: 7px;
 }
 
+.view_stories {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: center;
+}
+
+.stories_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stories_block > p {
+    width: 64px;
+    text-align: center;
+}
+
+
 
 footer > nav {
     display: flex;
