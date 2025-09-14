@@ -85,8 +85,12 @@ header {
     padding: 2px;
     border-radius: 50%;
     border: 3px solid #8A8A8A;
+    border: 3px solid #FACC05;
+
     margin-bottom: 3px;
     object-fit: cover;
+
+
 }
 
 .profile {
@@ -164,6 +168,9 @@ header {
     font-size: 14px;
     padding: 0 15px;
     padding-bottom: 7px;
+    white-space: nowrap;          
+    overflow: hidden;             
+    text-overflow: ellipsis;
 }
 
 .post_block > .description > span {
@@ -196,7 +203,9 @@ header {
 
 .post_block > .send_user_comment > textarea {
     width: 100%;
-    height: inherit;
+    overflow-y: hidden;
+    min-height: 40px;
+    max-height: 200px;
 }
 .post_block > .send_user_comment > button {
     font-size: 12px;

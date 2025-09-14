@@ -1,55 +1,12 @@
-const storiesArr = [
-    {
-        id: 1,
-        name: 'rasist',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 2,
-        name: 'wrwerwrw',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 3,
-        name: 'erterytreyrt',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 4,
-        name: 'rasretertist',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 5,
-        name: 'sdfsdf',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 6,
-        name: 'rasdfsdsist',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 7,
-        name: 'sdfsdfs',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 8,
-        name: 'fnklsdjf',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-    {
-        id: 9,
-        name: 'log',
-        image: '../images/rectangle/unsplash_y2oAd10UfIU.jpg', 
-    },
-]
+import storyFixture from './storyFixture.js'
+
+const activeStoryes = '#FACC05'
+const viewedStoryes = '#8A8A8A'
 
 
 const storiesContainer = document.querySelector('.view_stories');
 
-for (const i of storiesArr) {
+for (const i of storyFixture) {
     storiesContainer.innerHTML +=`
     <div class="stories_block">
         <img src="${i.image}" alt="" class="story">
@@ -57,6 +14,10 @@ for (const i of storiesArr) {
     </div>`
 }
 
+// Сделать следующую логику: 
+// после того как человек посмотрел сториес
+// добавлять в массив особое свойство 
+// означающее просмотренное сториес после клика
 
 
 

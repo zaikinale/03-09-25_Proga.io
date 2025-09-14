@@ -1,40 +1,8 @@
-
-
-
-
-const postsArr = [
-    {
-        id: 1,
-        name: 'marvel',
-        img_profile: '../images/rectangle/unsplash_IrQmtib-ER4.jpg',
-        img_post: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
-        likes: 1390128,
-        description: 'loremsfjklsdjfsdjflkadsjflkjsdalfkjasdklfjsalkdjfklsdjfklsajfkdljsakldfjslkdfjlksdjfklsjkldfjasdfklsjlkfjasdlfjkls',
-        comments: 6789,
-    },
-    {
-        id: 2,
-        name: 'asdasdasda',
-        img_profile: '../images/rectangle/unsplash_IrQmtib-ER4.jpg',
-        img_post: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
-        likes: 139012123128,
-        description: 'nkjshzvkjlhfdslihvsdfkjv',
-        comments: 6123123789,
-    },
-    {
-        id: 3,
-        name: 'qweqweqeqw',
-        img_profile: '../images/rectangle/unsplash_IrQmtib-ER4.jpg',
-        img_post: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
-        likes: 1328,
-        description: 'fsdgkldfjgkdjsl;fk;fdgjhjkjl;jlhgfjkljhgfjklhgfhjklhgfhjkhgfhjkhgfhjklhgfhjklhg',
-        comments: 69,
-    },
-]
+import postsFixture from './postsFixture.js'
 
 const main = document.querySelector('main');
 
-for (let i of postsArr) {
+for (let i of postsFixture) {
     main.innerHTML += `
 <div class="post_block">
     <div class="title_block">
@@ -67,10 +35,10 @@ for (let i of postsArr) {
         Liked by <span class="fiend">Pupa</span> and <span class="quantity">${i.likes} others</span>
     </div>
     <div class="description">
-        <span class="">${i.img_profile}</span>
+        <span class="">${i.name}</span>
         ${i.description}
     </div>
-    <button class="view_comments">view all <span class="quantity">${i.comments}</span> comments</button>
+    <button class="view_comments">view all <span class="quantity"> ${i.comments} </span> comments</button>
     <div class="send_user_comment">
         <img src="../images/rectangle/unsplash_Ve7xjKImd28.jpg" alt="" class="profile_img"> 
         <textarea name="your_comment" id="" placeholder="Your comment"></textarea>
