@@ -94,9 +94,9 @@ const personsArr = [
         subscribers: 12321,
         subscriptions: 324,
     },
-]
+];
 
-
+export default personsArr;
 // Как развернуть функционал чтобы можно было узнать истории и посты человека?
 
 
