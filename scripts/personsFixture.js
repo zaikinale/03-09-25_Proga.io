@@ -71,23 +71,23 @@ const personsArr = [
         ],
         stories: [
             {
-                description: 'my summer',
+                description: 'summer',
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
             },
             {
-                description: 'my winter',
+                description: 'winter',
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
             },
             {
-                description: 'my mother',
+                description: 'mother',
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
             },
             {
-                description: 'my dog',
+                description: 'dog',
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
             },
             {
-                description: 'my live',
+                description: 'live',
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
             },
         ],
