@@ -22,5 +22,27 @@ for (const i of storyFixture) {
 
 
 
+// Сделать отдельную функцию по генерации story с передачей массива истоиий и контейнера для историй
+
+// const generateStories = (arr, container) => {
+//     for (const i of arr) {
+//         container.innerHTML +=`
+//         <div class="stories_block">
+//             <img src="${i.image}" alt="" class="story">
+//             <p>${i.name}</p>
+//         </div>`
+//     }
+// }
+
+// export { generateStories };
+
+
+
+
+
+
+
+
+
 
 

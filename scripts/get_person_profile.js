@@ -10,23 +10,35 @@ const findUserOfId = (id, arr) => arr.find(user => user.id === id);
 
 const container = document.querySelector('.content')
 
-const generateLentaPosts = (posts) => {
+const generateLentaPosts = (posts, container) => {
     for (const i of posts) {
-        container.innerHTML(`
+        container.innerHTML +=`
             <div class="post">
                 <img src="${i.img}" alt="">
             </div>
-            `)
+            `
     }
 }
 const user = findUserOfId(id, personsArr)
 
+
+const generateStories = (arr, container) => {
+    for (const i of arr) {
+        container.innerHTML +=`
+            <div class="stories_block">
+                <img src="${i.img}" alt="" class="story">
+                <p>${i.description}</p>
+            </div>`
+    }
+}
+
+
 if (user) {
 
     // Ставим логин
-    const login = document.querySelector('.leaveprofile h2');
+    const login = document.querySelector('.leave_profile h2');
     if (login) {
-        login.textContent = user.nick;
+        login.textContent = user.login;
     }
     // Ставим аватарку
     const userImg = document.querySelector('.person img') 
@@ -66,18 +78,16 @@ if (user) {
         const url = new URL(i);
         const hostname = url.hostname;
 
-        linksUser.innerHTML(`
+        linksUser.innerHTML +=`
             <a href="${i}">${hostname}</a>
-            `)
+            `
     }
 
-    
+    const storiesContainer = document.querySelector('.view_stories')
 
+    generateStories(user.stories ,storiesContainer)
 
-
-
-
-    generateLentaPosts(posts)
+    generateLentaPosts(posts, container)
 }
 
 

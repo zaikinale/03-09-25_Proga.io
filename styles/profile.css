@@ -42,6 +42,14 @@ main > .description {
 main > .description >* {
     font-size: 14px;
 } 
+
+main > .description > .links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+
 main > .description > .links > a{
     color: #1877F2;
 }
@@ -91,12 +99,21 @@ main > .profile_buttons {
     padding: 10px 0;
 }
 
+.stories_block > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 .content {
     padding: 0;
     display: grid;
     gap: 1px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 124px 124px 124px;
+    grid-template-rows: 124px 124px 124px 124px 124px 124px 124px 124px 124px;
     overflow: scroll;
     height: 320px;
 }
