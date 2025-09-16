@@ -116,7 +116,6 @@ main > .profile_buttons {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1px;
-
     align-items: flex-start;
     align-content: flex-start;
 }

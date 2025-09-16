@@ -17,16 +17,19 @@
     <main>
         <div class="title">
             <img src="../images/icons/logo_instagram.svg" alt="Instagram">
-        </div>
-        <form action="">
-            <input type="text" placeholder="Phone number, email or username">
-            <input type="text" placeholder="Password">
+        </div>  
+        <form action="#" id="loginForm">
+            <input type="text" id="username" placeholder="Phone number, email or username">
+            <input type="password" id="password" placeholder="Password">
             <button>Log in</button>
             <div class="help">
                 Forget your login details?
                 <a href="#">Get help logging in.</a>
             </div>
+            <div id="errorMessage" class="error"></div>
         </form>
     </main>
+
+    <script src="../scripts/sign_in.js"></script>
 </body>
 </html>
