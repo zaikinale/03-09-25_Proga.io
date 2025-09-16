@@ -1,3 +1,5 @@
+import personsArr from "./personsFixture"; './personsFixture'
+
 const users = [
     { username: "user1", password: "pass123" },
     { username: "admin", password: "admin123" },
@@ -29,3 +31,9 @@ form.addEventListener('submit', function(e) {
         errorDiv.style.marginTop = "10px";
     }
 });
+
+// Добавить функционал входа исходя из базы фикстур профилей 
+// далее по принципу id пользователя выдавать профиль пользователя и главную ленту
+
+
+

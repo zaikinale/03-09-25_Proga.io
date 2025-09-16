@@ -2,11 +2,14 @@
 const personsArr = [
     {
         id: 1,
+        phone: '+79932341256',
+        main: 'fsdsdfs@mail.ru',
         name: 'Alexander',
         avatar: '../images/rectangle/unsplash_S6hq9V3cfxQ.jpg',
         login: 'alexander_lohpedovich228',
         description: 'hakjhlgiak,hfdlg,hjfdbghjkbfhkjfbvjahkd',
         links: ['https://www.google.com/?hl=ru'],
+        password: 'asdsakdahsdkjansdhajksd',
         posts: [
             {
                 img: '../images/rectangle/unsplash_IMfJYJJZMUw.jpg',
