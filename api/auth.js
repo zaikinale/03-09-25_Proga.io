@@ -1,53 +1,90 @@
 const API_URL = "http://92.255.79.122:9999/api/v1/auth"
 
 async function register(login, email, password){
-    const res = await fetch(`${API_URL}/register`, {
+    let token = window.sessionStorage.getItem("accessToken")
+    return await apiRequest(token, `${API_URL}/register`, {
         method: "POST",
+        credentials: "include",
         body:JSON.stringify({
             login,
             email,
             password
         })
     })
-    return await res.json()
+
+    // const res = await fetch(`${API_URL}/register`, {
+    //     method: "POST",
+    //     body:JSON.stringify({
+    //         login,
+    //         email,
+    //         password
+    //     })
+    // })
+    // return await res.json()
 }
 
 async function login(login_or_email, password){
-    const res = await fetch(`${API_URL}/login`, {
+    let token = window.sessionStorage.getItem("accessToken")
+    return await apiRequest(token, `${API_URL}/login`, {
         method: "POST",
+        credentials: "include",
         body:JSON.stringify({
             login_or_email,
             password
         })
     })
-    return await res.json()
+
+    // const res = await fetch(`${API_URL}/login`, {
+    //     method: "POST",
+    //     body:JSON.stringify({
+    //         login_or_email,
+    //         password
+    //     })
+    // })
+    // return await res.json()
 }
 
 async function logout(){
-    const res = await fetch(`${API_URL}/logout`, {
-        method: "POST"
+    let token = window.sessionStorage.getItem("accessToken")
+    return await apiRequest(token, `${API_URL}/logout`, {
+        method: "POST",
+        credentials: "include",
     })
-    return await res.json()
+
+    // const res = await fetch(`${API_URL}/logout`, {
+    //     method: "POST"
+    // })
+    // return await res.json()
 }
 
-async function refreshTokens(access_token){
-    const res = await fetch(`${API_URL}/refresh-tokens`, {
-        method: "POST",
-        body: JSON.stringify({
-            access_token,
-        })
-    })
-    return await res.json()
-}
+// async function refreshTokens(access_token){
+//     const res = await fetch(`${API_URL}/refresh-tokens`, {
+//         credentials: 'include',
+//         method: "POST",
+//         body: JSON.stringify({
+//             access_token,
+//         })
+//     })
+//     return await res.json()
+// }
 
 async function verifyEmail(token){
-    const res = await fetch(`${API_URL}/verify-email`, {
+    let token = window.sessionStorage.getItem("accessToken")
+    return await apiRequest(token, `${API_URL}/verify-email`, {
         method: "POST",
+        credentials: "include",
         body: JSON.stringify({
             token,
         })
     })
-    return await res.json()
+
+    // const res = await fetch(`${API_URL}/verify-email`, {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //         token,
+    //     })
+    // })
+    // return await res.json()
 }
 
 export { register, login, logout, refreshTokens, verifyEmail }
