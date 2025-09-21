@@ -16,7 +16,8 @@ async function createPost(caption, image_url, location){
 
 async function createPost(caption, image_url, location){
     let resp = await fetch(API_URL, {
-    method: "GET",2§w1q `h5g4xz§    dz§1e 1`
+        method: "GET",
+        credentials: "include",
         headers:{
             "Authorization": `Bearer ${JSON.parse(window.sessionStorage.getItem("tokes").accessToken)}`
         },
