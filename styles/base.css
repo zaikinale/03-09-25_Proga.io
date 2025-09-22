@@ -197,16 +197,48 @@ header {
     padding: 0 15px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     gap: 5px;
+    overflow: visible;
 }
 
-.post_block > .send_user_comment > textarea {
+/* .post_block > .send_user_comment > textarea {
     width: 100%;
     overflow-y: hidden;
     min-height: 40px;
     max-height: 200px;
+} */
+.comment-input {
+    display: block;
+    width: 100%;
+    min-height: 20px;
+    max-height: 120px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    color: #000;
+    background: #fafafa;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    overflow: hidden; /* ✅ не auto, не scroll — просто hidden */
+    transition: height 0.15s ease, background-color 0.2s ease;
 }
+
+.comment-input::placeholder {
+    color: #8e8e8e;
+}
+
+.comment-input:focus {
+    background: #fff;
+    box-shadow: 0 0 0 2px #0095f633;
+}
+
 .post_block > .send_user_comment > button {
     font-size: 12px;
     background-color: #1877F2;

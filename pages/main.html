@@ -15,6 +15,8 @@
             <button>
                 <img src="../images/icons/Add.svg" alt="">
             </button>
+
+
             <button>
                 <img src="../images/icons/Like.svg" alt="">
             </button>
@@ -61,5 +63,35 @@
     </footer>
     <script type="module"  src="../scripts/generative_posts.js"></script>
     <script type="module" src="../scripts/generative_stories.js"></script>
+    <!-- Модальное окно создания поста -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Создать новый пост</h2>
+                <span id="closeModalBtn" class="close">&times;</span>
+            </div>
+
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="imageUrl">URL изображения</label>
+                    <input type="url" id="imageUrl" name="imageUrl" placeholder="https://example.com/image.jpg" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="caption">Описание</label>
+                    <textarea id="caption" name="caption" rows="3" placeholder="Расскажите, что происходит..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Место</label>
+                    <input type="text" id="location" name="location" placeholder="Добавьте локацию..." />
+                </div>
+
+                <button type="submit" class="btn primary">Поделиться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../scripts/add_post.js"></script>
 </body>
 </html>

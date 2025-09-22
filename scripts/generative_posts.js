@@ -41,8 +41,33 @@ for (let i of postsFixture) {
     <button class="view_comments">view all&nbsp;<span class="quantity">${i.comments}</span>&nbsp;comments</button>
     <div class="send_user_comment">
         <img src="../images/rectangle/unsplash_Ve7xjKImd28.jpg" alt="" class="profile_img"> 
-        <textarea name="your_comment" id="" placeholder="Your comment"></textarea>
+        <textarea name="your_comment comment-input" placeholder="Your comment"></textarea>
         <button>Send</button>
     </div>
 </div>`
 }
+
+// Ждём следующего "тика" (чтобы DOM обновился после innerHTML)
+setTimeout(() => {
+    const textareas = document.querySelectorAll('.comment-input');
+
+    textareas.forEach(ta => {
+        // Сбрасываем всё, что может мешать
+        ta.style.height = 'auto';
+        ta.style.overflow = 'hidden';
+
+        // Устанавливаем высоту по контенту
+        const newHeight = ta.scrollHeight + 2; // +2px запас
+        ta.style.height = newHeight + 'px';
+
+        // Вешаем обработчик
+        ta.addEventListener('input', function() {
+            this.style.height = 'auto'; // Сначала сбрасываем
+            // Затем — с задержкой 0 — устанавливаем новую высоту
+            setTimeout(() => {
+                this.style.height = (this.scrollHeight + 2) + 'px';
+            }, 0);
+        });
+    });
+}, 0);
+
