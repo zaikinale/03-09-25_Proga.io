@@ -26,7 +26,8 @@ main {
     flex-direction: column;
     gap: 30px;
     max-height: 573px;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* ============= МОДАЛЬНОЕ ОКНО ============= */

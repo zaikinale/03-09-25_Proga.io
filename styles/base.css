@@ -253,7 +253,8 @@ header {
     align-items: center;
     gap: 17px;
     padding: 0 11px;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
     padding-bottom: 7px;
 }
 

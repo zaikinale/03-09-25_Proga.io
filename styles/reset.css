@@ -1,3 +1,16 @@
+body >* {
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+body >*::-webkit-scrollbar {
+    display: none;
+}
+
+html >* {
+    scrollbar-width: none;
+}
+
 *,
 *::before,
 *::after {
