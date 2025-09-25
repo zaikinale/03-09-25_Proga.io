@@ -6,6 +6,7 @@ async function createPost(caption, image_url, location){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, API_URL, {
         method: "POST",
+        credentials: "include",
         body: JSON.stringify({
             caption,
             image_url,

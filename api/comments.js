@@ -4,7 +4,6 @@ async function postComments(postId, content){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/${postId}`, {
         method: "POST",
-        credentials: "include",
         body: JSON.stringify({
             content
         })
@@ -23,7 +22,6 @@ async function getComments(id){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/${id}`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/comments/${id}`, {
@@ -36,7 +34,6 @@ async function putComments(id, content){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/${id}`, {
         method: "PUT", 
-        credentials: "include",
         body: JSON.stringify({
             content,
         })
@@ -55,7 +52,6 @@ async function deleteComments(id){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/${id}`, {
         method: "DELETE",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/comments/${id}`, {
@@ -68,7 +64,6 @@ async function getCommentsPost(postId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/post/${postId}`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/comments/post/${postId}`, {
@@ -81,7 +76,6 @@ async function getCommentsUser(userId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/comments/user/${userID}`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/comments/user/${userID}`, {

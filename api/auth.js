@@ -4,7 +4,6 @@ async function register(login, email, password){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/register`, {
         method: "POST",
-        credentials: "include",
         body:JSON.stringify({
             login,
             email,
@@ -27,7 +26,6 @@ async function login(login_or_email, password){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/login`, {
         method: "POST",
-        credentials: "include",
         body:JSON.stringify({
             login_or_email,
             password
@@ -48,7 +46,6 @@ async function logout(){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/logout`, {
         method: "POST",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/logout`, {
@@ -72,7 +69,6 @@ async function verifyEmail(token){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/verify-email`, {
         method: "POST",
-        credentials: "include",
         body: JSON.stringify({
             token,
         })
