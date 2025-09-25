@@ -197,17 +197,11 @@ header {
     padding: 0 15px;
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     gap: 5px;
     overflow: visible;
 }
 
-/* .post_block > .send_user_comment > textarea {
-    width: 100%;
-    overflow-y: hidden;
-    min-height: 40px;
-    max-height: 200px;
-} */
 .comment-input {
     display: block;
     width: 100%;
@@ -226,7 +220,7 @@ header {
     white-space: pre-wrap;
     word-wrap: break-word;
     box-sizing: border-box;
-    overflow: hidden; /* ✅ не auto, не scroll — просто hidden */
+    overflow: hidden; 
     transition: height 0.15s ease, background-color 0.2s ease;
 }
 
@@ -276,7 +270,19 @@ header {
     text-align: center;
 }
 
-
+.post_block>.send_user_comment>textarea {
+    min-width: 250px;
+    resize: none;
+    min-height: 40px;
+    max-height: 200px;
+    overflow-y: hidden;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
 footer > nav {
     display: flex;

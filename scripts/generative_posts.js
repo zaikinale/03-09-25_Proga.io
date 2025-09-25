@@ -41,7 +41,7 @@ for (let i of postsFixture) {
     <button class="view_comments">view all&nbsp;<span class="quantity">${i.comments}</span>&nbsp;comments</button>
     <div class="send_user_comment">
         <img src="../images/rectangle/unsplash_Ve7xjKImd28.jpg" alt="" class="profile_img"> 
-        <textarea name="your_comment comment-input" placeholder="Your comment"></textarea>
+        <textarea name="your_comment" placeholder="Your comment"></textarea>
         <button>Send</button>
     </div>
 </div>`
