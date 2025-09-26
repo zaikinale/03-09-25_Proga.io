@@ -1,0 +1,49 @@
+.placeholder > img {
+  transition: transform 0.3s ease
+}
+
+.placeholder:hover > img {
+  transform: scale(1.35);
+  border: none;
+  animation: heartbeat 0.6s ease;
+}
+
+.actions_buttons > button {
+  transition: transform 0.3s ease
+}
+.actions_buttons > button:hover {
+  transform: scale(1.35);
+  border: none;
+  animation: heartbeat 0.6s ease;
+}
+
+.action_buttons>button {
+  transition: transform 0.3s ease
+}
+
+.action_buttons>button:hover {
+  transform: scale(1.35);
+  border: none;
+  animation: heartbeat 0.6s ease;
+}
+
+.actions>button {
+  transition: transform 0.3s ease
+}
+
+.actions>button:hover {
+  transform: scale(1.35);
+  border: none;
+  animation: heartbeat 0.6s ease;
+}
+
+.send_user_comment>button {
+  transition: transform 0.3s ease
+}
+
+.send_user_comment>button:hover {
+  transform: scale(1.20);
+  border: none;
+  animation: heartbeat 0.6s ease;
+}
+
