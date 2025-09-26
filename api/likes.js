@@ -4,7 +4,6 @@ async function postLikes(postId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/likes/${postId}/toggle`, {
         method: "POST",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/likes/${postId}/toggle`, {
@@ -17,7 +16,6 @@ async function getLikes(postId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/likes/${postId}`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/likes/${postId}`, {
@@ -30,7 +28,6 @@ async function getLikesUser(userId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/likes/user/${userId}`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/likes/user/${userId}`, {
@@ -43,7 +40,6 @@ async function getLikesCount(postId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/likes/${postId}/count`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/likes/${postId}/count`, {
@@ -56,7 +52,6 @@ async function getLikesCheck(postId){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/likes/${postId}/check`, {
         method: "GET",
-        credentials: "include",
     })
 
     // const res = await fetch(`${API_URL}/likes/${postId}/check`, {

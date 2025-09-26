@@ -17,7 +17,7 @@ for (let i of postsFixture) {
     <img src="${i.img_post}" alt="">
     <div class="actions">
         <div class="action_buttons">
-            <button>
+            <button class='like_button'>
                 <img src="../images/icons/Like.svg" alt="">
             </button>
             <button>

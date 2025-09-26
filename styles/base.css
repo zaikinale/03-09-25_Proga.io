@@ -233,12 +233,17 @@ header {
     box-shadow: 0 0 0 2px #0095f633;
 }
 
+.like_button > img {
+    fill: #FF0000;
+}
+
+
 .post_block > .send_user_comment > button {
     font-size: 12px;
     background-color: #1877F2;
     color: white;
-    padding: 10px;
-    border-radius: 3px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .history_container {

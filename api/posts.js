@@ -5,7 +5,6 @@ const API_URL = "http://92.255.79.122:9999/api/v1/auth"
 async function postPosts(caption, image_url, location){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, API_URL, {
-        credentials: "include",
         method: "POST",
         body: JSON.stringify({
             caption,
@@ -18,7 +17,6 @@ async function postPosts(caption, image_url, location){
 async function getPosts(page, limit){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts?page=${page}&limit=${limit}`, {
-        credentials: "include",
         method: "GET",
     })
 
@@ -31,7 +29,6 @@ async function getPosts(page, limit){
 async function postsID(id){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts/${id}`, {
-        credentials: "include",
         method: "GET",
     })
 
@@ -44,7 +41,6 @@ async function postsID(id){
 async function putPosts(id, caption, location){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts/${id}`, {
-        credentials: "include",
         method: "PUT",
         body: JSON.stringify({
             caption,
@@ -65,7 +61,6 @@ async function putPosts(id, caption, location){
 async function deletePosts(id){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts/${id}`, {
-        credentials: "include",
         method: "DELETE",
     })
 
@@ -78,7 +73,6 @@ async function deletePosts(id){
 async function getPostsUser(userId, page, limit){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts/$user/{userId}?page=${page}&limit=${limit}`, {
-        credentials: "include",
         method: "GET",
     })
 
@@ -91,7 +85,6 @@ async function getPostsUser(userId, page, limit){
 async function getPostsFeed(page, limit){
     let token = window.sessionStorage.getItem("accessToken")
     return await apiRequest(token, `${API_URL}/posts/feed??page=${page}&limit=${limit}`, {
-        credentials: "include",
         method: "GET",
     })
     
