@@ -1,4 +1,4 @@
-import personsArr from './personsFixture.js'
+import personsArr from '../fixtures/personsFixture.js'
 
 const id = 1
 

@@ -1,4 +1,4 @@
-import storyFixture from './storyFixture.js'
+import storyFixture from '../fixtures/storyFixture.js'
 
 const activeStoryes = '#FACC05'
 const viewedStoryes = '#8A8A8A'

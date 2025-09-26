@@ -1,4 +1,4 @@
-import postsFixture from './postsFixture.js'
+import postsFixture from '../fixtures/postsFixture.js'
 
 const main = document.querySelector('main');
 
