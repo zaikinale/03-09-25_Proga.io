@@ -12,13 +12,14 @@
 .actions_buttons > button {
   transition: transform 0.3s ease
 }
+
 .actions_buttons > button:hover {
   transform: scale(1.35);
   border: none;
   animation: heartbeat 0.6s ease;
 }
 
-.action_buttons>button {
+/* .action_buttons>button {
   transition: transform 0.3s ease
 }
 
@@ -26,9 +27,9 @@
   transform: scale(1.35);
   border: none;
   animation: heartbeat 0.6s ease;
-}
+} */
 
-.actions>button {
+/* .actions>button {
   transition: transform 0.3s ease
 }
 
@@ -36,7 +37,7 @@
   transform: scale(1.35);
   border: none;
   animation: heartbeat 0.6s ease;
-}
+} */
 
 .send_user_comment>button {
   transition: transform 0.3s ease

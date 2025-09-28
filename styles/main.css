@@ -1,6 +1,6 @@
 @import url('../styles/reset.css');
 @import url('../styles/base.css');
-@import url('../styles/animations.css');
+/* @import url('../styles/animations.css'); */
 
 header > .logo {
     width: 124px;
@@ -42,6 +42,16 @@ main {
     max-height: 573px;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.create_stories > .placeholder > img {
+    transition: transform 0.3s ease
+}
+
+.create_stories:hover > .placeholder > img {
+    transform: scale(1.35);
+    border: none;
+    animation: heartbeat 0.6s ease;
 }
 
 /* ============= МОДАЛЬНОЕ ОКНО ============= */

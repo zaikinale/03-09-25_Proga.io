@@ -5,7 +5,7 @@ const main = document.querySelector('main');
 for (let i of postsFixture) {
     main.innerHTML += `
 <div class="post_block">
-    <div class="title_block">
+    <div class="title_block hover-button">
         <div class="profile">
             <img src="${i.img_profile}" alt="" class="profile_img">
             <h4>${i.name}</h4>
@@ -15,8 +15,8 @@ for (let i of postsFixture) {
         </button>
     </div>
     <img src="${i.img_post}" alt="">
-    <div class="actions">
-        <div class="action_buttons">
+    <div class="actions hover-button">
+        <div class="action_buttons hover-button">
             <button class='like_button toggle'>
                 <img src="../images/icons/like_off.svg" alt="">
             </button>
@@ -39,7 +39,7 @@ for (let i of postsFixture) {
         ${i.description}
     </div>
     <button class="view_comments">view all&nbsp;<span class="quantity">${i.comments}</span>&nbsp;comments</button>
-    <div class="send_user_comment">
+    <div class="send_user_comment hover-button">
         <img src="../images/rectangle/unsplash_Ve7xjKImd28.jpg" alt="" class="profile_img"> 
         <textarea name="your_comment" placeholder="Your comment"></textarea>
         <button>Send</button>
