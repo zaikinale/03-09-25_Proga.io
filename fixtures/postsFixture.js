@@ -8,6 +8,11 @@ const postsArr = [
         likes: 1390128,
         description: 'loremsfjklsdjfsdjflkadsjflkjsdalfkjasdklfjsalkdjfklsdjfklsajfkdljsakldfjslkdfjlksdjfklsjkldfjasdfklsjlkfjasdlfjkls',
         comments: 6789,
+        commentList: [
+            { author: "adkl", text: "Wow!", profileImg: "..." },
+            { author: "Alice", text: "Tsdfsdfhanks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
     {
         id: 2,
@@ -17,6 +22,11 @@ const postsArr = [
         likes: 139012123128,
         description: 'nkjshzvkjlhfdslihvsdfkjv',
         comments: 6123123789,
+        commentList: [
+            { author: "Bob", text: "Wow!", profileImg: "..." },
+            { author: "Alice", text: "Thadfsdfsnks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
     {
         id: 3,
@@ -26,6 +36,11 @@ const postsArr = [
         likes: 1328,
         description: 'fsdgkldfjgkdjsl;fk;fdgjhjkjl;jlhgfjkljhgfjklhgfhjklhgfhjkhgfhjkhgfhjklhgfhjklhg',
         comments: 69,
+        commentList: [
+            { author: "Bob", text: "дщ!", profileImg: "..." },
+            { author: "Alice", text: "Thanks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
     {
         id: 4,
@@ -35,6 +50,11 @@ const postsArr = [
         likes: 1328,
         description: 'fsdgkldfjgkdjsl;fk;fdgjhjkjl;jlhgfjkljhgfjklhgfhjklhgfhjkhgfhjkhgfhjklhgfhjklhg',
         comments: 69,
+        commentList: [
+            { author: "Bob", text: "Wow!", profileImg: "..." },
+            { author: "Alice", text: "Thanks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
     {
         id: 5,
@@ -44,6 +64,11 @@ const postsArr = [
         likes: 1328,
         description: 'fsdgkldfjgkdjsl;fk;fdgjhjkjl;jlhgfjkljhgfjklhgfhjklhgfhjkhgfhjkhgfhjklhgfhjklhg',
         comments: 69,
+        commentList: [
+            { author: "Bob", text: "Wow!", profileImg: "..." },
+            { author: "Alice", text: "Thanks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
     {
         id: 6,
@@ -53,6 +78,11 @@ const postsArr = [
         likes: 1328,
         description: 'fsdgkldfjgkdjsl;fk;fdgjhjkjl;jlhgfjkljhgfjklhgfhjklhgfhjkhgfhjkhgfhjklhgfhjklhg',
         comments: 69,
+        commentList: [
+            { author: "Bob", text: "Wow!", profileImg: "..." },
+            { author: "Alice", text: "Thanks!", profileImg: "..." },
+            { author: "Eve", text: "Love it!", profileImg: "..." }
+        ]
     },
 ];
 
