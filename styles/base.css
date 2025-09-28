@@ -30,11 +30,16 @@
     src: url("../fonts/Inter/Inter_24pt-SemiBold.ttf");
 }
 
+html {
+    background-color: #000;
+}
+
 body {
     max-width: 375px;
     max-height: 812px;
     font-family: Roboto;
     margin: 0 auto;
+    background-color: white;
 }
 
 
