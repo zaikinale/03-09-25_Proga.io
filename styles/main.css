@@ -54,3 +54,30 @@ main {
     border: none;
     animation: heartbeat 0.6s ease;
 }
+
+.shake-button:hover > img {
+    animation: shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-3px);
+    }
+
+    40% {
+        transform: translateX(3px);
+    }
+
+    60% {
+        transform: translateX(-2px);
+    }
+
+    80% {
+        transform: translateX(1px);
+    }
+}
