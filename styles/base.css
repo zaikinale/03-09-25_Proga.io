@@ -92,6 +92,31 @@ header {
     animation: heartbeat 0.6s ease;
 }
 
+.link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block !important;
+    white-space: nowrap;
+    padding-bottom: 2px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(24, 119, 242);
+    transition: width 0.3s ease;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
 
 .story {
     height: 63px;
@@ -337,4 +362,15 @@ footer > nav {
     80% {
         transform: translateX(1px);
     }
+}
+
+a.link,
+footer nav a,
+footer .hover-button a {
+    display: inline !important;
+    width: fit-content !important;
+    max-width: fit-content !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: left !important;
 }

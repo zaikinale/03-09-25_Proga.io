@@ -79,7 +79,7 @@ if (user) {
         const hostname = url.hostname;
 
         linksUser.innerHTML +=`
-            <a href="${i}">${hostname}</a>
+            <a class='link' href="${i}">${hostname}</a>
             `
     }
 
